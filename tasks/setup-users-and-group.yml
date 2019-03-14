@@ -2,8 +2,6 @@
   group: name={{ admin_group }} state=present
 
 # Combine two user lists here
-- set_fact: full_admin_list={{ "company_admin_list" + "project_admin_list" }}
-  tags: ['debug']
 
 - name: Setup all users
   user:
