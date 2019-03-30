@@ -14,5 +14,20 @@ company_admin_list:
     username: "oldpiuser"
     state: absent
 
+project_admin_list:
+  - name: "pi user2"
+    username: "piuser2"
+    keys:
+      active:
+        - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCm2cqxDFsXzU9MGzw0Ushz/bxMqsQzTN+gM76hs4rmjHhEtl1XDmwFuk0z8l5f17yE13XB1OjcMxW7tCJ7FEVyXnOkOOQ7Ta7759G63vrUPcoLTEgwVyvY1RUtQvCT6AsZe4dKVzyuY4kOjDiQhcu7WxbfDyUhLyv33o/Vs4DY4h0si1Vk6mXTrT3RFjPJpEECv6W9I7bicNOfBAKa5q5mDwq1cJzbYIpQXWrHgagg6O3FCxpmZAn+WiFG2WysT0uczFvC1JKxXWI+rmCHVUE6+hOQ/Qs1gOfYyLWzM8HxS1XmRYoJuWYNLgYYGs4N6ov09aHFMXlyLhoNFj26TmI3 root@lenovo-lap"
+      disabled:
+        - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsPoDM21LjBodcS3Kiq7ZDyNjFY4L03Yx2nSoSzdV7TKj00Zk8gh1hSSgI/xSDXiK+QEbfPuh/7+G3sfeDDNavjWUA1kdLve4D6MTI302C3HilK6wOZV67ezyAgdgf/VCHfx+no+bocw/05r1VamLrnFjDasWAQFFeFLaOnfQTArHQRl2Z8+4ZtZ1YQPhnleFQfEz546D3oWE1DS3vuXL1Qodz3gijtHhGnc3jaQM+7m/gg2vrcL6bc/vCtdunpA1fSQrBSx0kK4qdTWwc2LZDwKIT3YP5GthvgkFHsbCo2mNdBwWZfOBTYr5LBpz9YBcO7oVBWVEI00BdEPRFOYJL onnimonni@Onni-MacBook-Air.local"
+    shell: "/bin/bash"
+    state: present
+  - name: "old pi user2"
+    username: "oldpiuser2"
+    state: absent
+
+
 # This is the admin group where we will add users with sudo access
 admin_group: infra_admin
